@@ -1,6 +1,6 @@
 爬虫目标（挖坑）
 
-0.[IT橘子](https://www.itjuzi.com/)和[36Kr](http://36kr.com/)
+0.[IT桔子](https://www.itjuzi.com/)和[36Kr](http://36kr.com/)
 
 抓取IT桔子和36Kr的各公司的投融资数据，试图分析中国各家基金之间的互动关系。
 
