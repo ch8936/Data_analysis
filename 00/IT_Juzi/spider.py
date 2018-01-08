@@ -8,12 +8,12 @@ my_header = {
     'Connection': 'keep-alive',
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
 	'Accept-Language': 'zh-TW,zh;q=0.9,zh-CN;q=0.8',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'
 }
 
 def getUrls():
     urls = []
-    for i in range(1,20):
+    for i in range(1,21):
         url = 'https://www.itjuzi.com/investevents?page=%d' % i
         urls.append(url)
     return urls
@@ -59,4 +59,4 @@ def getIndex():
     return date
     
 df = pd.DataFrame(getInfo(), index = getIndex(), columns = ['location', 'label', 'company', 'money', 'rounds'])
-df.to_excel('data-2.xlsx')
+df.to_excel('data-1.xlsx')
